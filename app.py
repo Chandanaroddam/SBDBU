@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 def create_clothing_brand_page(brand_name, clothing_items):
     st.title(f"{brand_name} Clothing")
@@ -15,3 +16,8 @@ brand_name = "Fashion World"
 clothing_items = ["T-shirt", "Jeans", "Dress", "Jacket", "Shoes"]
 
 create_clothing_brand_page(brand_name, clothing_items)
+
+df = pd.read_csv('women_clothing_ecommerce_sales.csv')
+df
+
+st.dataframe(df)
