@@ -1,2 +1,2 @@
 # SBDBU
-It's an app regarding clothing
+My app
